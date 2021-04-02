@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: white;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    background: #E6E6E6;
+    color: #4A4A4A;
+    max-width: 1400px;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    padding: 0px 3%;
+    background: #4A4A4A;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+header>div.bar {
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    margin: 0px 2%;
+    font-size: 20px;
+}
+
+header div input {
+    padding: 5px;
+}
+
+header div a {
+    color: white;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+h1 {
+    padding-left: 5%;
+}
+
+h1, h2 {
+    display: inline-block;
+    margin: 20px 0px;
+}
+
+h2 {
+    color: grey;
+    padding-left: 20px;
+}
+
+nav {
+    width: 94%;
+    margin: 0px 3%;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+nav li {
+    display: inline-block;
+    
+    background: #E6E6E6;
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: box-shadow 0.2s ease,color 0.2s ease;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 8px 20px;
+    color: steelblue;
+}
+
+nav li:hover {
+    color: darkslategray;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    width: 97%;
+    margin: 0px 1.5% 0px;
+    font-size: 0px;
+}
+
+.card-sm {
+    display: inline-block;
+    width: 22%;
+    height: 100px;
+    margin: 30px 1.5% 0px;
+    background: white;
+    color: #4A4A4A;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease;
+}
+
+.card-sm:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.box-icon {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    clip-path: circle(30% at 35% 50%);
+    position: relative;
+}
+
+.icon {
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.box-data {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+.box-data>div {
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.box-data p {
+    font-size: 16px;
+}
+
+.box-data p.number {
+    font-size: 32px;
+}
+
+.card-lg {
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+    margin: 30px 1.5% 0px;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease;
+}
+
+.card-xl {
+    display: inline-block;
+    width: 62%;
+    vertical-align: top;
+    margin: 30px 1.5% 0px;
+    background: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease;
+}
+
+.card-sm:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.box-card {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    border: 10px solid white;
+    margin-top: 0px;
+    font-size: 32px;
+}
+
+.box-card i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 96px;
+    color: white;
+}
+
+.box-text {
+    padding: 0px 10px 10px;
+    background: white;
+    font-size: 16px;
+}
+
+.green {
+    background-color: #81c784;
+}
+
+.blue {
+    background-color: #4fc3f7;
+}
+
+.red {
+    background-color: #e57353;
+}
+
+.yellow {
+    background-color: #fff176;
+}
+.white{
+    background-color:white;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        height: 100%;
+    }
+    header {
+        padding: 0px 6%;
+    }
+    .card-sm {
+        width: 47%;
+        height: 100px;
+        margin: 30px 1.5% 0px;
+    }
+    .card-lg {
+        width: 97%;
+    }
+    .card-xl {
+        width: 97%;
+        margin: 30px 1.5% 30px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    h2 {
+        display: none;
+    }
+}
+
+footer {
+    position: absolute;
+    padding: 5px;
+    left: 50%;
+    bottom: 5px;
+    transform: translatex(-50%);
+}
+
+.card-sm-active{
+    display: inline-block;
+    width: 22%;
+    height: 100px;
+    margin: 30px 1.5% 0px;
+    background: #4fc3f7;
+    color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    
+}
+.icon-active {
+    font-size: 32px;
+    color: #4A4A4A;;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
